@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "retroTest",
+"dataUrl": "alphaTest.data.unityweb",
+"asmCodeUrl": "alphaTest.asm.code.unityweb",
+"asmMemoryUrl": "alphaTest.asm.memory.unityweb",
+"asmFrameworkUrl": "alphaTest.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
