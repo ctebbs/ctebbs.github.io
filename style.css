@@ -28,8 +28,16 @@
     margin-top: 50px;
     margin-left: 20%; 
     box-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
+    position: relative; 
 }
 
+.logo{ 
+    position: absolute; 
+    margin-left: 85%;
+    margin-top: -35%; 
+    width: 180px; 
+    height: auto; 
+}
 .project2{ 
     margin: 0px auto; 
     width: 60%; 
