@@ -1,0 +1,78 @@
+#container{ 
+    max-width: 1000px;
+    margin: 0px auto;
+    margin-top: 0px; 
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+}
+
+.title{ 
+    font-size: 24px; 
+    position: fixed; 
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-50%, -50%) rotate(90deg);
+    text-align: center; 
+    font-family: montserrat, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1{ 
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px; 
+    margin: 0px; 
+    padding-bottom: 0px; 
+    font-style: normal;
+    letter-spacing: 3px;
+    color: #030052; 
+}
+
+h2{ 
+    margin-bottom: 0px;
+    letter-spacing: 1.8px;
+    font-size: 30px; 
+    font-family: montserrat, sans-serif; 
+    font-weight: 600; 
+    font-style: normal; 
+    color: #002D5C;
+}
+
+h3{ 
+    margin: 0px; 
+    font-size: 20px; 
+    font-family: montserrat, sans-serif; 
+    font-weight: 300; 
+    font-style: italic; 
+    color: #002D5C;  
+}
+
+#body{ 
+    margin-left: 10%;
+    text-align: left; 
+    width: 90%; 
+    display: flex; 
+    margin-top: 50px; 
+}
+
+#projectTitle{ 
+    width: 50%;
+}
+
+#projectRole{ 
+    margin-top: 15px; 
+    width: 50%; 
+    text-align: right; 
+    font-size: 18px;
+    font-family: montserrat, sans-serif; 
+    font-weight: 300; 
+    font-style: normal; 
+    color: #002D5C;  
+}
+
+body{ 
+    background-image: linear-gradient(to left, #fff 90%,  #FF4F4F 10%);
+}
