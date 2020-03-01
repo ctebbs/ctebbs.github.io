@@ -460,19 +460,22 @@ img{
     }
 
     #innerDesign{ 
+        max-width: 100% !important; 
         display: inline-block  !important; 
-        margin: 0px auto; 
-        text-align: center; 
+        margin: 0px auto !important; 
+        text-align: center !important; 
     }
 
     #designText{ 
         text-align: left; 
         max-width: 100% !important; 
+        width: 100%; 
     }
 
     #designImage{  
         max-width: 100% !important; 
-        margin-left: -40px !important; 
+        width: 100%; 
+        margin-left: -30px;
     }
 
     /* Re-do media styling to not extend boxes on smaller screens */
