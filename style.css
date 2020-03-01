@@ -459,6 +459,22 @@ img{
         margin: 0; 
     }
 
+    #innerDesign{ 
+        display: inline-block  !important; 
+        margin: 0px auto; 
+        text-align: center; 
+    }
+
+    #designText{ 
+        text-align: left; 
+        max-width: 100% !important; 
+    }
+
+    #designImage{  
+        max-width: 100% !important; 
+        margin-left: -40px !important; 
+    }
+
     /* Re-do media styling to not extend boxes on smaller screens */
 
     #trashScreensWrap{ 
