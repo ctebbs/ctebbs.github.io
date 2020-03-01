@@ -1,63 +1,88 @@
 <html>
-
-<header><title>Christiana Tebbs</title></header>
-<head> 
+  <head> 
+    <title>Christiana Tebbs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/doc3hwq.css">
-</head>
+  </head>
 
-<body>
-<h1 class = "title">
-    CHRISTIANA TEBBS
-</h1>
-
-<div id = 'container'>
-    <div class = 'left'>
-        <div class = 'about'> 
-            <h1> HELLO </h1>
-            <p class = 'text'> My name is Christiana Tebbs, I'm an Interactive Media Design student working in UX Design and Mobile Development. </p>
-            <button type="button"  onclick = "window.location.href = ''" >About Me</button>
-        </div>
-        <div class = 'project2'>
-            <h2> CORELA BALL </h2>
-            <div> 
-                <img src = "images/CorelaBall-01.png">
-            </div>
-            <p class = 'text'> CORELA Ball is a mobile game designed to educate users on waste management.</p>
-        <button type="button">Learn More</button>
-        </div>
-        <div class = 'project2'>
-            <h2>TRASH ISLAND </h2>
-            <div style=" margin-left: -50px; margin-right: -50px" > 
-                 <img id = 'screens' src = "images/screens.png">
-            </div>
-            <p class = 'text'> Trash Island is a choose-your-own adventure game showing a speculative future in which 
-                you are a prisoner recently sent to an island of trash.</p>
-            <button type="button">Learn More</button>
-        </div>
-    </div>
-    <div class = 'right'>
-        <div class = 'project'>
-            <h2> SLICE OF SOUL</h2>
-            <div> 
-                <img class = 'logo' src = 'images/sliceOfSoulLogo.png' alt = 'Slice of Soul Logo'>
-            </div>
-            <p class = 'text'> Slice of Soul is an interactive fiction experience. It takes you through recipes you complete using gestures in AR, while urging 
-            the user to empathize with others by listening to the story behind the recipe.</p>
-            <div style = "max-width: 100%;">
-                 <button type="button" onclick = "window.location.href = 'sliceOfSoul.html'" >Learn More</button>
-             </div>
-        </div>
-        <div class = 'project'>
-            <h2>DESC VIDEO </h2>
-            <div style=" margin-left: -30px; margin-right: -80px" > 
-                <img id = "Desc" src = "images/Desc_Preview.png">
-            </div>
-            <p class = 'text'> I worked together with DESC (Downtown Emergence Service Center) in Seattle, WA to create this 360 video experience walking through one of their housing locations.</p>
-            <button type="button">Learn More</button>
-        </div>
-    </div>
-</div>
+  <body>
+	<div class = "navigation" id = 'nav_display'> 
+		<img src = "images/Name.png" style = "max-height: 25px;" alt = "name" class = "nameLogo">
+		<nav> 
+			<ul> 
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "sliceOfSoul.html">Slice of Soul</a></li>
+				<li><a href = "#">DESC Video</a></li>
+				<li><a href = "#">Corela Ball</a></li>
+				<li><a href = "#">Trash Island</a></li>
+			</ul>
+		</nav>
+	</div>
+	<button id = 'navigateButton' onClick = "showDropdown()">
+		<image src = "images/hamburger.png" class = 'regular'></image>
+		<image src = "images/hamburgerHover.png" class = 'hover'></image>	
+	</button> 
+    <h1 class = "title">
+      CHRISTIANA TEBBS
+    </h1>
+	<div class = 'container'>
+		<div class = 'left'>
+			<div class = 'about'> 
+				<h1> HELLO </h1>
+				<p class = 'text'> My name is Christiana Tebbs, I'm an Interactive Media Design student working in UX Design and Mobile Development. </p>
+				<button type="button"  onclick = "window.location.href = ''" >About Me</button>
+			</div>
+			<div class = 'project2'>
+					<h2> CORELA BALL </h2>
+				<div class = 'projectPreview'> 
+					<img src = "images/CorelaBall-01.png">
+				</div>
+				<p class = 'text'> CORELA Ball is a mobile game designed to educate users on waste management.</p>
+				<div style = "max-width: 100%; text-align: center;">
+					<button type="button" onclick = "window.location.href = ''" >Learn More</button>
+				</div>
+			</div>
+			<div class = 'project2'>
+				<h2>TRASH ISLAND </h2>
+				<div class = 'projectPreview' id = 'trashScreensWrap'> 
+					<img class = 'trashIslandScreens' src = "images/screens.png">
+				</div>
+					<p class = 'text'> Trash Island is a choose-your-own adventure game showing a speculative future in which 
+					you are a prisoner recently sent to an island of trash.</p>
+					<div style = "max-width: 100%; text-align: center;">
+					<button type="button" onclick = "window.location.href = ''" >Learn More</button>
+				</div>
+			</div>
+		</div>
+		<div class = 'right'>
+			<div class = 'project'>
+				<h2> SLICE OF SOUL</h2>
+				<div class = 'projectPreview'> 
+					<img class = 'sliceOfSoulLogo' src = 'images/sliceOfSoulLogo.png' alt = 'Slice of Soul Logo'>
+				</div>
+				<p class = 'text'> Slice of Soul is an interactive fiction experience. It takes you through recipes you complete using gestures in AR, while urging 
+				the user to empathize with others by listening to the story behind the recipe.</p>
+				<div style = "max-width: 100%; text-align: center;">
+					<button type="button" onclick = "window.location.href = 'sliceOfSoul.html'" >Learn More</button>
+				</div>
+			</div>
+			<div class = 'project'>
+				<h2>DESC VIDEO </h2>
+				<div class = 'projectPreview' id = 'DescPreview' style=" margin-left: -30px; margin-right: -80px" > 
+					<img id = "Desc" src = "images/Desc_Preview.png">
+				</div>
+					<p class = 'text'> I worked together with DESC (Downtown Emergence Service Center) in Seattle, WA to create this 360 video experience walking through one of their housing locations.</p>
+					<div style = "max-width: 100%; text-align: center;">
+					<button type="button" onclick = "window.location.href = ''" >Learn More</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-
+	<script> 
+	function showDropdown() {
+		document.getElementById("nav_display").classList.toggle("show");
+	}
+	</script>
 </html>

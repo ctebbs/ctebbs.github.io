@@ -1,4 +1,24 @@
-#container{ 
+/* 'hide' elements only used in mobile/small screens */
+#navigateButton{ 
+    display: none; 
+}
+
+/* Body background & Font */
+
+body { 
+    background-image: linear-gradient(to left, #FF4F4F 50%, #fff 50%);
+    margin: 0; 
+    font-family: montserrat, sans-serif;
+}
+
+body.portfolio-page { 
+    background-image: linear-gradient(to right, #FF4F4F 10%, #fff 10%);
+    margin: 0; 
+}
+
+/* Define the container width for front page and portfolio pages */
+
+.container{ 
     max-width: 1000px;
     margin: 0px auto;
     margin-top: 0px; 
@@ -6,6 +26,64 @@
     padding-right: 24px;
     display: flex;
 }
+
+.portfolio-page .container{ 
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation bar for all pages */
+
+.navigation{ 
+    margin: 0px auto;
+    margin-bottom: 12px; 
+    padding: 12px; 
+    background-color: #002D5C;
+    display: flex;  
+    height: 24px;
+}
+
+.navigation nav ul{ 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.navigation nav li{ 
+    display: inline-block; 
+    padding-top: 6px; 
+    padding-left: 50px; 
+    padding-right: 10px;
+}
+
+.navigation nav a{ 
+    color: white; 
+    text-decoration: none; 
+    text-transform: uppercase;
+    padding-top: auto; 
+    padding-bottom: auto; 
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px; 
+}
+
+.navigation nav a:hover{ 
+    color: #FF4F4F;
+}
+
+/* image inside nav bar */
+
+.nameLogo{ 
+    margin: 0px;
+    padding: 0px;
+    width: auto; 
+}
+
+/* set up home page columns, with left vs right project cards */
 
 .left{ 
     width: 50%; 
@@ -26,25 +104,6 @@
     position: relative; 
 }
 
-.logo{ 
-    position: absolute; 
-    margin-left: 60%;
-    margin-top: -35%; 
-    width: 180px; 
-    height: auto; 
-}
-
-#screens{ 
-    max-width: 100%; 
-
-}
-
-#desc{ 
-    max-width: 100%; 
-    margin-bottom: 0px; 
-    padding-bottom: 0px; 
-}
-
 .project2{ 
     margin: 0px auto; 
     width: 60%; 
@@ -57,13 +116,8 @@
     display: inline-block; 
 }
 
-h1{ 
-    font-family: montserrat, sans-serif;
-    font-weight: 900;
-    font-size: 40px; 
-    font-style: normal;
-    color: #030052; 
-}
+
+/* sideways name on homepage / sideways title on project pages */
 
 .title{ 
     font-size: 24px; 
@@ -78,14 +132,95 @@ h1{
     font-style: normal;
 }
 
+.portfolio-page .title {
+    left: 10%; 
+}
+
+/* About me on homepage + Hello bounce */
+
 .about{ 
     margin: 20px; 
 }
 
+.about h1 { 
+    margin-top: 80px;
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+.about h1:hover{ 
+    color: #FF4F4F;
+}
+
+/* Styling for project preview images (homepage) */
+
+.sliceOfSoulLogo{ 
+    position: absolute; 
+    margin-left: 60%;
+    margin-top: -35%; 
+    width: 180px; 
+    height: auto; 
+}
+
+.trashIslandScreens{ 
+    max-width: 100%; 
+}
+
+#trashScreensWrap{ 
+    margin-left: -50px; 
+    margin-right: -50px;
+}
+
+#desc{ 
+    max-width: 100%; 
+    margin-bottom: 0px; 
+    padding-bottom: 0px; 
+}
+
+/* Text and header styles */
+
+.text{ 
+    font-weight: 300;
+    font-style: normal;
+    color: #002D5C;
+    line-height: 1.7rem;
+}
+
+.project2 .text{ 
+    color: white; 
+}
+
+h1{ 
+    font-weight: 900;
+    font-size: 40px; 
+    font-style: normal;
+    color: #030052; 
+}
+
+h2{ 
+    margin: 0px; 
+    margin-bottom: 5px; 
+    margin-left: 0px; 
+    letter-spacing: 1.8px;
+    font-size: 26px; 
+    font-weight: 600; 
+    font-style: normal; 
+    color: #002D5C;
+}
+
+h3{ 
+    margin: 0px; 
+    font-size: 20px; 
+    font-weight: 300; 
+    font-style: italic; 
+    color: #002D5C;  
+}
+
+/* button style */
+
 button{ 
     max-width: 100%; 
     font-size: 12px; 
-    font-family: montserrat, sans-serif; 
     font-weight: 300; 
     padding: 10px; 
     padding-left: 20px; 
@@ -97,58 +232,56 @@ button{
     text-align: center; 
 }
 
-button:hover{ 
+button:hover { 
     background-color: black; 
     color: white; 
 }
 
-.about h1{ 
-    animation-name: bounce;
-  animation-duration: 1s;
-}
-.about h1:hover{ 
-    color: #FF4F4F;
+/* project page sections */ 
+
+#overview, #design, #modeling, #programming { 
+    color: #002D5C;
+    margin: 48px;
+    padding-bottom: 24px; 
+    padding-top: 24px; 
+    margin-left: 10%; 
+    margin-top: 0%; 
 }
 
-body{ 
-    background-image: linear-gradient(to left, #FF4F4F 50%, #fff 50%);
-}
-
-h2{ 
-    margin: 0px; 
-    margin-bottom: 5px; 
-    margin-left: 0px; 
-    letter-spacing: 1.8px;
-    font-size: 26px; 
-    font-family: montserrat, sans-serif; 
-    font-weight: 600; 
+#projectRole{ 
+    width: 50%; 
+    text-align: right; 
+    font-size: 18px;
+    font-weight: 300; 
     font-style: normal; 
-    color: #002D5C;
+    color: #002D5C;  
+    padding-right: 12px; 
 }
 
-.text{ 
-    font-family: montserrat, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #002D5C;
-    line-height: 1.5rem;
+#body{ 
+    margin-left: 10%;
+    text-align: left; 
+    width: 90%; 
+    display: flex; 
+    margin-top: 50px; 
 }
 
-.project:hover{ 
+#projectTitle { 
+    width: 50%;
+}
 
-} 
+/* image specific */
 
-.project2:hover{ 
-
+.projectMedia{ 
+    padding-top: 24px;
+    padding-bottom: 24px; 
 }
 
 img{
     max-width: 100%;
 }
 
-.project2 .text{ 
-    color: white; 
-}
+/* Animation */
 
 @keyframes bounce {
     0% {
@@ -166,5 +299,220 @@ img{
     100%{ 
         transform:translate(0%);
     }
-
   }
+
+  /* Smaller screen style */
+
+  @media only screen and (max-width: 1000px) {
+
+    /* Set up new body background */
+
+    body {
+        background-image: none; 
+        background-color:#FF4F4F; 
+        margin: 0;
+    }
+
+    body.portfolio-page{ 
+        background-image: none; 
+        background-color: white; 
+        margin: 0;
+    }
+
+    /* Prepare nav for show/hide toggle */
+
+    #nav_display{ 
+        display: inline-block; 
+        visibility: hidden;
+    }
+    
+    .show{ 
+        visibility: visible !important;
+    }
+
+    /* Navigation button style / change on hover */
+
+    #navigateButton{ 
+        background-color: transparent; 
+        border: none; 
+        position: fixed; 
+        display: inline-block; 
+        margin-left: 15px;
+        margin-top: 15px; 
+        text-align: left; 
+        padding: 0px; 
+        width: 60px;
+    }
+
+    #navigateButton .regular{ 
+        position: absolute;
+        width: 100%; 
+    }
+
+    #navigateButton .hover {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        width: 60px;
+    }
+
+    #navigateButton:hover .hover {
+        display: inline-block;
+        margin: auto;
+        width: 60px; 
+    }
+
+    /* Set up navigation drop-down style */
+
+    .navigation{  
+        position: fixed;
+        text-align: left; 
+        margin-bottom: 12px; 
+        padding: 12px; 
+        background-color:white;
+        text-decoration: none; 
+        width: 300px; 
+        height: 100%; 
+        display: inline-block;
+        visibility: hidden; 
+    }
+
+    .navigation nav li{ 
+        width: 100%; 
+        padding-left: 12px; 
+        margin: 0px;  
+        padding-right: 12px; 
+    }
+
+    .navigation nav a{ 
+        width: 100%; 
+        display: inline-block; 
+        font-size: 14px; 
+        padding-top: 24px;
+        padding-bottom: 24px; 
+        color: #002D5C; 
+    }
+
+    .navigation nav li:hover{ 
+        background-color: #002D5C;
+        color: white;
+    }
+
+    .navigation nav li:hover a{ 
+        color: inherit; 
+    }
+
+    .navigation nav ul{ 
+        display: inline-block;
+        margin: 0; 
+        margin-top: 45px; 
+        padding: 25px; 
+    }
+
+    /* Re-style project cards for mobile */
+   
+    .left, .right{ 
+        width: 100%;
+    }
+
+    .project, .project2{ 
+        width: 70%; 
+        margin: 0px auto; 
+        margin-top: 24px; 
+        display: inline-block;  
+        background-color: white;
+        position: static; 
+        color: #002D5C; 
+        
+    }
+
+    .project h2, .project2 h2{ 
+        margin-bottom: 20px; 
+    }
+
+    .text{ 
+        text-align: left; 
+        color: #002D5C; 
+    }
+
+    .project2 .text{ 
+        color: #002D5C;  
+    }
+
+    /* Set home page container to fill whole screen now and remove display: flex */
+
+    .container{ 
+        max-width: 100%; 
+        margin: 0px auto;
+        margin-left: 10px; 
+        margin-right: 10px; 
+        display: inline-block; 
+        text-align: center; 
+        padding: 0px; 
+    }
+
+    /* Similar change for portfolio-page but with less margin */
+
+    .portfolio-page .container{ 
+        max-width: 100%; 
+        background-color: white; 
+        margin: 0; 
+    }
+
+    /* Re-do media styling to not extend boxes on smaller screens */
+
+    #trashScreensWrap{ 
+        width: 80%; 
+        margin: 0px auto;
+    }
+    
+    .projectPreview{ 
+        margin: 0px auto; 
+        padding: 0px; 
+        text-align: center; 
+    }
+
+    .soulLogoWrap{ 
+        margin: 0px auto; 
+        padding: 0px; 
+        text-align: center; 
+    }
+
+    .projectPreview img { 
+        width: 95%; 
+        margin: 0px auto; 
+    }
+
+    .projectPreview .sliceOfSoulogo{ 
+        position: static; 
+        width: 60%; 
+    }
+
+    #DescPreview{ 
+        width: 80%; 
+        margin: 0px auto;
+        display: inline-block; 
+        text-align: center;  
+    }
+
+    /* Some mostly color changes to the way about section shows on mobile */
+
+    .about{ 
+        width: 90%; 
+        margin: 0px auto; 
+    }
+
+    .about .text{ 
+        color: white;
+    }
+
+    .about h1:hover{ 
+        color: white; 
+    }
+
+    /* hide title on mobile */
+
+    .title{ 
+        display: none; 
+    }
+}
