@@ -472,7 +472,8 @@ img{
         text-align: center; 
     }
 
-    .soulLogoWrap{ 
+    #soulLogoWrap{ 
+        display: inline-block; 
         margin: 0px auto; 
         padding: 0px; 
         text-align: center; 
@@ -483,8 +484,9 @@ img{
         margin: 0px auto; 
     }
 
-    .projectPreview .sliceOfSoulogo{ 
-        position: static; 
+    .projectPreview .sliceOfSoulLogo{ 
+       display: inline-block;
+       position: static; 
         width: 60%; 
     }
 
