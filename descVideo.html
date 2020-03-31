@@ -1,0 +1,77 @@
+<html>
+    <head> 
+        <title>Christiana Tebbs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/doc3hwq.css">
+    </head>
+
+<body class='portfolio-page'>
+    <div class = "navigation" id = "nav_display"> 
+		<img src = "images/Name.png" style = "max-height: 25px;" alt = "name" class = "nameLogo">
+		<nav> 
+			<ul> 
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "sliceOfSoul.html">Slice of Soul</a></li>
+				<li><a href = "descVideo.html">DESC Video</a></li>
+				<li><a href = "corelaBall.html">Corela Ball</a></li>
+				<li><a href = "trashIsland.html">Trash Island</a></li>
+			</ul>
+		</nav>
+     </div>
+     <button id = 'navigateButton' onClick = "showDropdown()">
+		<image src = "images/hamburger.png" class = 'regular'></image>
+		<image src = "images/hamburgerHover.png" class = 'hover'></image>	
+	</button> 
+        <h1 class = "title">
+            DESC VIDEO
+        </h1>
+        <div class = 'container'>
+            <div id = 'body'>
+                <div id = 'projectTitle'>
+                    <h2> DESC VIDEO</h2>
+                    <h3>360 Degree Video Tour</h3>
+                    <p> </p>
+                </div>
+                <div id = 'projectRole'>
+                    <p>Developed in 2019 <br> 
+                       Roles: Scriptwriter, Storyboarding, <br>  Experience Design</p>
+                </div>
+            </div>
+            <div id = 'overview' style = 'max-width: 100%;'>
+                <h2> Overview </h2>
+                <p class = 'text'>Please watch here: https://vimeo.com/341422668</p>
+                <p class = 'text'>   This was a project my team and I worked on for the DESC (Downtown Emergency Service Center) in Seattle, WA. This 360 video is a walkthrough of DESC Clement Place, one of their supportive housing buildings, and includes narration about the meaning and importance of supportive housing. A lot of research went into both the script and filming of this project, and required us to visit the site multiple times for our storyboard. </p>
+                <img class = 'project_media' src = 'images/descPreviews.png' style = "max-width: 100%;"></img>
+            </div>
+            <div id = 'overview' style = 'max-width: 100%;'>
+                <h2> Storyboarding / Scriptwriting </h2>
+                <p class = 'text'> My team and our contact spent a lot of time storyboarding for this project. Our goal was to find a way to include interaction with the space in a way that felt natural, but we weren't able to film any of the tenants in the space. Due to that, we spent time trying to plan out how we could act as actors in the building, and find ways to make the space feel 'lived in'. To do this we set up some fake scenes, such as cooking scenes, scenes where we are watching TV in the lounge space, scenes where we are sitting and talking in the dining area, and more. 
+                <br>
+                <br>
+                The storyboards I created walked through many different spaces and were very loose in terms of action/dialogue as we wanted scenes to feel natural.</p>
+                <img class = 'project_media' src = 'images/storyboardByDesignCinema.png' style = "max-width: 100%;"></img>
+                <p class  = 'text'>During the storyboarding process, we developed questions we wanted to be answered in each space. The vision for the script was for our interviewee to be answering open-ended questions, and then afterwards our team would cut the questions out of the audio. This would lead to a dialogue that had some direction from our questions, but was very natural. Our goal with this was to give the user an experience that made it seem like they were walking through the space with someone there as a guide naturally speaking to them about the importance of DESC Clement Place and supportive housing.</p>
+            </div>
+            <div id = 'overview' style = 'max-width: 100%;'>
+                <h2> Showcase </h2>
+                <div id = 'innerDesign' style = 'max-width: 100%; display: flex; margin: 0px; padding-right: 24px;'>
+                    <div id = 'designText' style = 'max-width: 60%; margin-left: 0px; padding-left: 0px; padding-right: 24px;'>
+                        <p class = 'text'>The end goal of this project was to create a video that users would be able to interact with at DESC events. We showcased this project at a fundraiser they held in October 2019 and set up the 360 experience with Google cardboard. This event was a success and users enjoyed being able to walk through the space virtually.</p>
+                    </div>
+                    <div id = 'overviewVideo' style = 'max-width: 40%; margin-top: 25px;'>
+                         <img style = 'max-width: 100%;' src = 'images/descEvent.jpg'></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script> 
+	function showDropdown() {
+		document.getElementById("nav_display").classList.toggle("show");
+	}
+</script>
+    
+</html>

@@ -14,7 +14,9 @@ body {
 body.portfolio-page { 
     background-image: linear-gradient(to right, #FF4F4F 10%, #fff 10%);
     margin: 0; 
+    font-family: montserrat, sans-serif;
 }
+
 
 /* Define the container width for front page and portfolio pages */
 
@@ -116,7 +118,33 @@ body.portfolio-page {
     display: inline-block; 
 }
 
+.aboutBlock{ 
+    margin: 0px auto; 
+    width: 60%; 
+    background-color: white;
+    padding: 24px;
+    margin-top: 50px;
+    margin-left: 50px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+    position: relative; 
+    display: inline-block; 
+    margin-bottom: 25px;
+}
 
+.aboutImage{
+    margin: 0px auto; 
+    width: 60%; 
+    padding: 24px;
+    margin-top: 100px;
+    position: relative; 
+    display: inline-block; 
+    margin-bottom: 25px;
+    margin-left: 30px; 
+}
+
+.aboutBlock .text{ 
+    color: #002D5C;
+}
 /* sideways name on homepage / sideways title on project pages */
 
 .title{ 
@@ -313,7 +341,7 @@ img{
         margin: 0;
     }
 
-    body.portfolio-page{ 
+    body.portfolio-page, body.aboutPage{ 
         background-image: none; 
         background-color: white; 
         margin: 0;
@@ -333,6 +361,7 @@ img{
     /* Navigation button style / change on hover */
 
     #navigateButton{ 
+        z-index: 1; 
         background-color: transparent; 
         border: none; 
         position: fixed; 
@@ -375,6 +404,7 @@ img{
         height: 100%; 
         display: inline-block;
         visibility: hidden; 
+        z-index: 1; 
     }
 
     .navigation nav li{ 
@@ -453,31 +483,61 @@ img{
 
     /* Similar change for portfolio-page but with less margin */
 
+    .aboutPage .container{ 
+        max-width: 100%; 
+        background-color: white; 
+        margin: 0; 
+        margin-top: 25px;
+    }
+
+    .aboutBlock{ 
+        margin: 0px auto; 
+        margin-bottom: 25px; 
+        box-shadow: none;
+        margin-top: 5px;
+        padding-top: 0px;
+    }
+
+    .aboutImage{ 
+        max-width: 400px; 
+        margin-bottom: 0px;
+        padding-bottom: 0px; 
+        z-index: 0; 
+    }
+
     .portfolio-page .container{ 
         max-width: 100%; 
         background-color: white; 
         margin: 0; 
+        margin-top: 25px;
     }
 
-    #innerDesign{ 
+    #innerDesign, #innerOverview{ 
         max-width: 100% !important; 
         display: inline-block  !important; 
         margin: 0px auto !important; 
         text-align: center !important; 
     }
 
-    #designText{ 
+    #designText,  #overviewText{ 
         text-align: left; 
         max-width: 100% !important; 
-        width: 100%; 
+        width: 100% !important; 
     }
 
     #designImage{  
+        margin-left: -30px; 
         max-width: 100% !important; 
         width: 100%; 
-        margin-left: -30px;
+        text-align: center; 
     }
 
+    #overviewVideo{  
+        max-width: 400px !important;    
+        text-align: center; 
+        margin-top: 0px !important;
+        margin: 0px auto !important;
+    }
     /* Re-do media styling to not extend boxes on smaller screens */
 
     #trashScreensWrap{ 

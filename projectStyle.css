@@ -5,6 +5,8 @@
     padding-left: 24px;
     padding-right: 24px;
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .title{ 
@@ -58,8 +60,22 @@ h3{
     margin-top: 50px; 
 }
 
-#projectTitle{ 
+.text{ 
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #002D5C;
+    line-height: 1.5rem;
+}
+
+#projectTitle { 
     width: 50%;
+}
+
+#overview, #design, #modeling, #programming { 
+    color: #002D5C;
+    margin-left: 10%; 
+    margin-top: 0%; 
 }
 
 #projectRole{ 
@@ -71,6 +87,10 @@ h3{
     font-weight: 300; 
     font-style: normal; 
     color: #002D5C;  
+}
+
+.cls-1:hover{ 
+    stroke: blue; 
 }
 
 body{ 

@@ -1,0 +1,54 @@
+<html>
+  <head> 
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/doc3hwq.css">
+  </head>
+
+  <body class = 'aboutPage'>
+	<div class = "navigation" id = 'nav_display'> 
+		<img src = "images/Name.png" style = "max-height: 25px;" alt = "name" class = "nameLogo">
+		<nav> 
+			<ul> 
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "sliceOfSoul.html">Slice of Soul</a></li>
+				<li><a href = "descVideo.html">DESC Video</a></li>
+				<li><a href = "corelaBall.html">Corela Ball</a></li>
+				<li><a href = "trashIsland.html">Trash Island</a></li>
+			</ul>
+		</nav>
+	</div>
+	<button id = 'navigateButton' onClick = "showDropdown()">
+		<image src = "images/hamburger.png" class = 'regular'></image>
+		<image src = "images/hamburgerHover.png" class = 'hover'></image>	
+	</button> 
+    <h1 class = "title">
+      ABOUT ME
+    </h1>
+	<div class = 'container'>
+		<div class = 'left'>
+            <div class = 'aboutImage' style = 'width: 80%; padding-left: 30px;'>
+                <img src = "images/profile.jpg" style = 'width: 100%;'>
+            </div>
+		</div>
+		<div class = 'right'>
+            <div class = 'aboutBlock' style = 'width: 80%; padding-left: 30px;'> 
+				<h1> ABOUT ME </h1>
+				<p class = 'text'> I'm a senior currently attending University of Washington, Bothell. I'm studying Interactive Media Design, and am interested especially in mobile application development and UX/UI design . I have a strong passion for art and technology, and am focusing on Computer Science for a minor.
+                <br>
+                <br>
+                In my free time I enjoy drawing, playing video games, and learning more about design. I also produce artwork and storylines for some tabletop RPG groups. My hope is that one day the designs I create will be able to tell a story or provide meaningful critical insights. 
+                <br>
+                <br>
+                I'm always looking for new projects and ways to learn more about design tools. Check back often to see growth as I continue my journey.  </p>
+			</div>
+        </div>
+	</div>
+</body>
+	<script> 
+	function showDropdown() {
+		document.getElementById("nav_display").classList.toggle("show");
+	}
+	</script>
+</html>
