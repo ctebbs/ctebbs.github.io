@@ -12,7 +12,7 @@ body {
 }
 
 body.portfolio-page { 
-    background-image: linear-gradient(to right, #FF4F4F 10%, #fff 10%);
+    background-image: linear-gradient(to right, #FF4F4F 5%, #fff 5%);
     margin: 0; 
     font-family: montserrat, sans-serif;
 }
@@ -161,13 +161,14 @@ body.portfolio-page {
 }
 
 .portfolio-page .title {
-    left: 10%; 
+    left: 5%; 
 }
 
 /* About me on homepage + Hello bounce */
 
 .about{ 
     margin: 20px; 
+    margin-right: 40px; 
 }
 
 .about h1 { 
@@ -184,8 +185,8 @@ body.portfolio-page {
 
 .sliceOfSoulLogo{ 
     position: absolute; 
-    margin-left: 60%;
-    margin-top: -35%; 
+    margin-left: 65%;
+    margin-top: -25%; 
     width: 180px; 
     height: auto; 
 }
@@ -309,6 +310,26 @@ img{
     max-width: 100%;
 }
 
+iframe{ 
+   /* Automatic margin from left */
+    width: 100%; 
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.display-scroll{ 
+    transform: translateY(4em);
+    opacity: 0; 
+    transition: transform 1.5s .2s cubic-bezier(0,1,.5,1),
+                opacity .2s .2s ease-out;
+    will-change: transform, opacity;
+    transform: translate(calc(0, -100%));
+}
+
+.is-visible{ 
+    opacity: 1; 
+    transform: none; 
+}
 /* Animation */
 
 @keyframes bounce {
