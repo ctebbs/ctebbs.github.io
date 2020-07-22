@@ -268,7 +268,7 @@ button:hover {
 
 /* project page sections */ 
 
-#overview, #design, #modeling, #programming { 
+.project-section { 
     color: #002D5C;
     margin: 48px;
     padding-bottom: 24px; 
@@ -277,7 +277,7 @@ button:hover {
     margin-top: 0%; 
 }
 
-#projectRole{ 
+.projectRole{ 
     width: 50%; 
     text-align: right; 
     font-size: 18px;
@@ -287,7 +287,7 @@ button:hover {
     padding-right: 12px; 
 }
 
-#body{ 
+.body{ 
     margin-left: 10%;
     text-align: left; 
     width: 90%; 
@@ -295,7 +295,7 @@ button:hover {
     margin-top: 50px; 
 }
 
-#projectTitle { 
+.projectTitle { 
     width: 50%;
 }
 
@@ -533,27 +533,27 @@ iframe{
         margin-top: 25px;
     }
 
-    #innerDesign, #innerOverview{ 
+    .sidebysidemedia{ 
         max-width: 100% !important; 
         display: inline-block  !important; 
         margin: 0px auto !important; 
         text-align: center !important; 
     }
 
-    #designText,  #overviewText{ 
+    .texttoside{ 
         text-align: left; 
         max-width: 100% !important; 
         width: 100% !important; 
     }
 
-    #designImage{  
+    .imagetoside{  
         margin-left: -30px; 
         max-width: 100% !important; 
         width: 100%; 
         text-align: center; 
     }
 
-    #overviewVideo{  
+    .videotoside{  
         max-width: 400px !important;    
         text-align: center; 
         margin-top: 0px !important;
